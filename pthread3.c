@@ -7,11 +7,13 @@ pthread_mutex_t mtx;
 void *TaskCode(void *argument) {
         int tid;
         tid = *((int*) argument);
+	int my_acc = 0;
         for(int i = 0; i < 1000000; i++) {
-        	pthread_mutex_lock(&mtx);	// 뮤텍스 잠금
-		acc += 1;
-		pthread_mutex_unlock(&mtx);	// 뮤텍스 해제
+		my_acc += 1;
 	}
+	pthread_mutex_lock(&mtx);
+	acc = acc + my_acc;
+	pthread_mutex_unlock(&mtx);
         return NULL;
 }
 
