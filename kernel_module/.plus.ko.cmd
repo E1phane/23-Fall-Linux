@@ -1,0 +1,1 @@
+cmd_/home/lilpa/workspace/my_project/kernel_module/plus.ko := ld -r  -m elf_x86_64 -z noexecstack   --build-id=sha1  -T scripts/module.lds -o /home/lilpa/workspace/my_project/kernel_module/plus.ko /home/lilpa/workspace/my_project/kernel_module/plus.o /home/lilpa/workspace/my_project/kernel_module/plus.mod.o;  true

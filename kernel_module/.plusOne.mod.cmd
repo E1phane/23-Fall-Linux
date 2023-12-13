@@ -1,0 +1,1 @@
+cmd_/home/lilpa/workspace/my_project/kernel_module/plusOne.mod := { echo  /home/lilpa/workspace/my_project/kernel_module/plusOne.o;  echo; } > /home/lilpa/workspace/my_project/kernel_module/plusOne.mod
